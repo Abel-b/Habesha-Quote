@@ -23,8 +23,17 @@ export class QuoteComponent implements OnInit {
       quote.completeDate = new Date(quote.completeDate)
       this.quotes.push(quote)
     }
-  constructor() { }
+    
+    deleteQuote(isComplete, index) {
+      if(isComplete) {
+        let toDelete = confirm(`Do you want to delete this quote? ${this.quotes[index].name}`)
+        if(toDelete) {this.quotes.splice(index, 1)}
+      }
+    }
 
+    toggleQuote() {
+      this.showDescription = !this.showDescription;
+    }
   ngOnInit() {
   }
 
