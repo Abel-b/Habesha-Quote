@@ -1,1 +1,46 @@
-<p>qoute works!</p>
+<div class="container" id="thee">
+    <div class="jumbotron">
+        <p>Habesha Quotes</p>
+        <h6>Quote Every Moment</h6>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4" id="one">
+            <div id="lol">
+                <h3>Quote it here</h3>
+            </div>
+            <hr>
+            <!--you'll add your form here!!!-->
+        </div>
+        <div class="col-md-8" id="two">
+            <div id="lol">
+                <h3>Habesha Quotes</h3>
+            </div>
+
+            <div class="row">
+                <div class="card" id="crd" *ngFor='let quote of quotes; let i = index'>
+                    <div class="card-title">
+                        <h5 font color="blue" *ngIf="showDescription">{{quote.name}}</h5>
+                    </div>
+                    <button type="button" (click)="toggleQuote()"
+                        class="btn btn-primary">{{showDescription? "Hide": "Show"}} Quote Details</button>
+                    <div class="card-body" id="ppp">
+                        <p id="{{i}}" appHighlight>{{qoute.description}}</p>
+                    </div>
+                    <div class="card-footer" id="hut" *ngIf="showDescription">
+                        <div class="row">
+                            <div class="cole-md-4">
+                                <p>
+                                    <!--WILL INSERT VOTE HERE-->
+                                </p>
+                            </div>
+                            <div class="col-md-2">
+                                <!--WILL INSERT QUOTE DETAILS HERE-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

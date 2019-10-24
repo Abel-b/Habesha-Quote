@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Quotes } from './qoute'
 
 @Component({
   selector: 'app-root',
