@@ -3,7 +3,7 @@
         <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
             <div class="form-group">
                 <label for="name">Original Quoter</label>
-                <input type="text" class="form-control"  [(ngModel)]="newQuote.name" name="name" #name="ngModel" placeholder="Type Here" required>
+                <textarea type="text" class="form-control"  [(ngModel)]="newQuote.name" name="name" #name="ngModel" placeholder="Type Here" required></textarea>
                 <div [hidden]="name.valid || name.pristine" class="alert alert-warning">
                     <p>Please add original quoter's name</p>
                 </div>
