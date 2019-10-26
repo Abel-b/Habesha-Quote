@@ -1,26 +1,24 @@
-.jumbotron {
+.landing {
     align-content: center;
     text-align: center;
     background-image: url('../../assets/rain.jpeg');
     background-size: cover;
     color: black;
+    height: 350px;
     background-repeat: no-repeat;
     font-size: 50px;
+    padding-top: 100px;
 
   }
 
-  #two {
-    background-color: lightskyblue
+  #qsubmit {
+    background-image: url('../../assets/blocks.jpg');
+    padding-left: 150px;
   }
 
-  #lol {
-    justify-content: center;
+  #htitle {
+    text-align: center;
   }
-
-  #cre {
-    color: yellow;
-  }
-
   #crd {
     border: 1px;
     border-style: outset;
@@ -46,10 +44,12 @@
     margin: 0;
   }
 
-  #one {
+  #qform {
     align-content: center;
     text-align: center;
-    background-image: url('../../assets/blocks.jpg');
+    background-image: url('../../assets/frame.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     color: black;
     font-size: 16px;
 

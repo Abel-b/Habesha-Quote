@@ -1,6 +1,11 @@
 #name {
     font-size: 30px;
+    padding-left: 440px;
+    padding-top: 100px;
     }
+  .form-control {
+    background-color: lightgray;
+  }
     
     .btn {
       font-variant: small-caps;
